@@ -10,7 +10,8 @@
  */
 angular
   .module('restClientApp', [
-    'ngRoute'
+    'ngRoute',
+    'ngStorage'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -18,6 +19,11 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         controllerAs: 'main'
+      })
+      .when('/history', {
+        templateUrl: 'views/history.html',
+        controller: 'HistoryCtrl',
+        controllerAs: 'history'
       })
       .otherwise({
         redirectTo: '/'

@@ -8,10 +8,7 @@
  * Controller of the restClientApp
  */
 angular.module('restClientApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope, $localStorage) {
+    $scope.$storage = $localStorage;
+    $scope.$storage.experience = $scope.$storage.experience ? true : false; 
   });
