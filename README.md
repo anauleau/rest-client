@@ -1,1 +1,2 @@
 # rest-client
+The goal of the rest-client is to provide the user with an interface that allows them interact with REST endpoints and view the contents. It is going to roughly work like a clone of the postman extension for chrome.
